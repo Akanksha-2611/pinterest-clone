@@ -1,0 +1,98 @@
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .portfolio {
+            position: absolute;
+            top: 2%;
+            line-height: 0.5;
+            text-align: center;
+            animation: slideIn 1s ease-in ;
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: start;
+        }
+        .btn{
+            display: inline-block;
+            padding: 5px 5px;
+            background-color: #f30d19;
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover{
+            background-color: #c45055;
+            color: #E1AFD1;
+        }
+        .container{
+            position: absolute;
+            top: 60%;
+        }
+ @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        .profile-pic {
+            border-radius: 50%;
+            border: 5px solid #51829B; 
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+h1{
+  font-family: 'Playfair Display', serif;
+  color:#333;
+}
+p{
+  color:#9BB0C1;
+  font-size:18px;
+  font-weight:bold;
+}
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color:#E1AFD1;
+            font-size: 30px;
+            transition: color 0.3s ease; 
+           animation: slideIn 1s ease-in-out forwards;
+        }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        .social-links a:hover {
+            color: #3498; 
+        }
