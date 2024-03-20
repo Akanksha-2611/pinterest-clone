@@ -20,6 +20,9 @@ router.get('/feed',function(req,res,next){
   res.render('feed');
 })
 
+router.get('/click',function(req,res,next){
+  res.render('click');
+})
 router.post('/upload',isLoggedIn,upload.single("file"),async function(req,res,next){
   if(!req.file){
     return res.status(404).send("no files were given");
